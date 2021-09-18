@@ -1,6 +1,6 @@
 <?php
 session_start();
-$url='api.openweathermap.org/data/2.5/weather?q='.$_POST['city'].'&appid=dab8608d8f83cb6a918ae3095a8488ac';
+$url='api.openweathermap.org/data/2.5/weather?q='.$_POST['city'].'&appid={my-api-key}';
 var_dump($url);
 $curl=curl_init($url);
 curl_setopt($curl,CURLOPT_RETURNTRANSFER,true);
